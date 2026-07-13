@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Upcoming Menu</title>
+    <style>
+      :root { color-scheme: light dark; }
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+        line-height: 1.5;
+        max-width: 960px;
+        margin: 0 auto;
+        padding: 2rem 1rem 3rem;
+      }
+      h1, h2 { line-height: 1.2; }
+      .subtitle { font-size: 1.1rem; margin-bottom: 1.5rem; }
+      ul { padding-left: 1.2rem; }
+      .gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        gap: 0.8rem;
+      }
+      .gallery img {
+        width: 100%;
+        border-radius: 10px;
+        border: 1px solid #8885;
+      }
+      .links a { margin-right: 1rem; }
+    </style>
+  </head>
+  <body>
+    <h1>Upcoming</h1>
+    <p class="subtitle">
+      Upcoming is a lightweight, native macOS menu bar app that brings your Apple Calendar events directly into view.
+      Stay on top of your schedule and join meetings instantly without having to open the full Calendar application.
+    </p>
+    <h2>Features</h2>
+    <ul>
+      <li><strong>Menu Bar Integration:</strong> Displays the current day or a real-time countdown to your next event directly in your status bar.</li>
+      <li><strong>Clean Event List:</strong> Click the menu bar icon to view an organized agenda for today and the coming days.</li>
+      <li><strong>One-Click Meeting Links:</strong> Detects virtual meeting links (Zoom, Google Meet, Microsoft Teams, etc.) and allows you to join directly from the dropdown.</li>
+      <li><strong>Native Performance:</strong> Built with Swift and SwiftUI for optimal efficiency and minimal resource usage on macOS.</li>
+      <li><strong>Calendar Synchronization:</strong> Integrates directly with your macOS Calendar database for seamless updates.</li>
+      <li><strong>Customize Your View:</strong> Choose which calendars to display, set the event refresh rate, and configure display preferences.</li>
+    </ul>
+    <h2>Privacy-First</h2>
+    <p>
+      Upcoming runs entirely on your local machine. It uses the native macOS EventKit framework to fetch calendar data and runs in a sandbox.
+      Your data is never collected, stored, or transmitted to external servers.
+    </p>
+    <p class="links">
+      <a href="privacy.html">Privacy Policy (Web)</a>
+      <a href="PRIVACY.md">Privacy Policy (Markdown)</a>
+    </p>
+    <h2>Requirements</h2>
+    <ul>
+      <li>macOS 12.0 (Monterey) or later</li>
+      <li>Calendar access permission</li>
+    </ul>
+    <h2>Screenshots</h2>
+    <div class="gallery">
+      <img src="screenshots/screenshot-1.png" alt="Upcoming screenshot 1" />
+      <img src="screenshots/screenshot-2.png" alt="Upcoming screenshot 2" />
+      <img src="screenshots/screenshot-3.png" alt="Upcoming screenshot 3" />
+      <img src="screenshots/screenshot-4.png" alt="Upcoming screenshot 4" />
+    </div>
+  </body>
+</html>
