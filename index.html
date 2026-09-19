@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Upcoming Menu</title>
+    <title>Upcoming — macOS Calendar Menu App</title>
     <style>
       :root { color-scheme: light dark; }
       body {
@@ -14,17 +14,22 @@
         padding: 2rem 1rem 3rem;
       }
       h1, h2 { line-height: 1.2; }
-      .subtitle { font-size: 1.1rem; margin-bottom: 1.5rem; }
+      .subtitle { font-size: 1.15rem; font-weight: 500; margin-bottom: 0.75rem; color: #007aff; }
+      .intro { font-size: 1.05rem; margin-bottom: 1.5rem; }
       ul { padding-left: 1.2rem; }
+      li { margin-bottom: 0.5rem; }
       .gallery {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-        gap: 0.8rem;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 1rem;
+        margin-top: 1rem;
       }
       .gallery img {
         width: 100%;
+        height: auto;
         border-radius: 10px;
         border: 1px solid #8885;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
       }
       .links a { margin-right: 1rem; }
     </style>
@@ -32,38 +37,45 @@
   <body>
     <h1>Upcoming</h1>
     <p class="subtitle">
-      Upcoming is a lightweight, native macOS menu bar app that brings your Apple Calendar events directly into view.
-      Stay on top of your schedule and join meetings instantly without having to open the full Calendar application.
+      Your calendar, right in the menu bar. See smart countdowns, browse your month, join meetings fast, and protect event details with Privacy mode.
     </p>
-    <h2>Features</h2>
-    <ul>
-      <li><strong>Menu Bar Integration:</strong> Displays the current day or a real-time countdown to your next event directly in your status bar.</li>
-      <li><strong>Clean Event List:</strong> Click the menu bar icon to view an organized agenda for today and the coming days.</li>
-      <li><strong>One-Click Meeting Links:</strong> Detects virtual meeting links (Zoom, Google Meet, Microsoft Teams, etc.) and allows you to join directly from the dropdown.</li>
-      <li><strong>Native Performance:</strong> Built with Swift and SwiftUI for optimal efficiency and minimal resource usage on macOS.</li>
-      <li><strong>Calendar Synchronization:</strong> Integrates directly with your macOS Calendar database for seamless updates.</li>
-      <li><strong>Customize Your View:</strong> Choose which calendars to display, set the event refresh rate, and configure display preferences.</li>
-    </ul>
-    <h2>Privacy-First</h2>
-    <p>
-      Upcoming runs entirely on your local machine. It uses the native macOS EventKit framework to fetch calendar data and runs in a sandbox.
-      Your data is never collected, stored, or transmitted to external servers.
+    <p class="intro">
+      Upcoming is a lightweight, native macOS menu bar app that keeps your Apple Calendar events, meeting links, and schedule within easy reach. See what’s happening now, know what’s coming next, and join meetings without opening the full Calendar app.
     </p>
     <p class="links">
+      <a href="https://apps.apple.com/app/upcoming-menu/id6780229491">View on the Mac App Store</a>
       <a href="privacy.html">Privacy Policy (Web)</a>
       <a href="PRIVACY.md">Privacy Policy (Markdown)</a>
     </p>
+    <h2>Features</h2>
+    <ul>
+      <li><strong>Smart Menu Bar Countdown:</strong> See when your next event starts with “in 10m,” or how long remains in an ongoing event with “ends in 10m.”</li>
+      <li><strong>Native Calendar Dropdown:</strong> Open a clean, date-grouped agenda using standard macOS colors, keyboard behavior, and side-opening menus.</li>
+      <li><strong>Mini-Calendar:</strong> Browse months, see calendar-colored event indicators, jump to today, and open any date directly in Calendar.</li>
+      <li><strong>Detailed Event Rows:</strong> Quickly scan event titles, times, locations, countdowns, and source-calendar colors.</li>
+      <li><strong>Join and Rejoin Meetings:</strong> Detects Zoom, Google Meet, Microsoft Teams, Webex, and GoToMeeting links. Join upcoming or ongoing meetings, or rejoin recently finished meetings during a configurable grace period.</li>
+      <li><strong>Fast Event Actions:</strong> Access meeting links, copy links, and open events from native submenus. Events without links open directly in Calendar.</li>
+      <li><strong>Privacy Mode:</strong> Hide event titles, locations, calendar names, and meeting links while presenting or sharing your screen. Times and countdowns remain visible.</li>
+      <li><strong>Flexible Event Filters:</strong> Choose visible calendars, show or hide tentative, declined, and free events, and display up to 10, 15, or 20 events across the next 3, 5, or 7 days.</li>
+      <li><strong>Customizable Menu:</strong> Place the mini-calendar above or below your events, hide it entirely, choose your countdown window, and open either Apple Calendar or Google Calendar.</li>
+      <li><strong>Native macOS Experience:</strong> Built with Swift, SwiftUI, and AppKit for responsive performance, system appearance support, and low resource usage.</li>
+      <li><strong>Start at Login:</strong> Optionally launch Upcoming automatically when you sign in to your Mac.</li>
+    </ul>
+    <h2>Privacy-First</h2>
+    <p>
+      Upcoming runs entirely on your Mac. It uses Apple’s native EventKit framework to access calendars you have granted permission to view and operates within the macOS App Sandbox. Your calendar data is never collected, stored on external servers, or transmitted to third parties. Upcoming contains no accounts or usage analytics.
+    </p>
     <h2>Requirements</h2>
     <ul>
-      <li>macOS 12.0 (Monterey) or later</li>
+      <li>macOS 13.0 (Ventura) or later</li>
       <li>Calendar access permission</li>
     </ul>
     <h2>Screenshots</h2>
     <div class="gallery">
-      <img src="screenshots/screenshot-1.png" alt="Upcoming screenshot 1" />
-      <img src="screenshots/screenshot-2.png" alt="Upcoming screenshot 2" />
-      <img src="screenshots/screenshot-3.png" alt="Upcoming screenshot 3" />
-      <img src="screenshots/screenshot-4.png" alt="Upcoming screenshot 4" />
+      <img src="screenshots/scene-d.png" alt="Upcoming overview and features" />
+      <img src="screenshots/scene-a.png" alt="Upcoming menu bar calendar and agenda" />
+      <img src="screenshots/scene-b.png" alt="Upcoming meeting links and lateral submenu" />
+      <img src="screenshots/scene-c.png" alt="Upcoming calendar view and schedule" />
     </div>
   </body>
 </html>
